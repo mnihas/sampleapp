@@ -1,0 +1,30 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Wyniki testów
+src/test/soapui/Test_uslugi-Sampleapplication_TestCase-Request_1-0-FAILED.txt
+src/test/soapui/global-groovy.log
+src/test/soapui/soapui-errors.log
+src/test/soapui/soapui.log
