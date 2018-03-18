@@ -1,8 +1,7 @@
 package pl.gov.coi.sample.demoapplication;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class HalloRest {
@@ -10,9 +9,11 @@ public class HalloRest {
   @Value("${welcome.message}")
   private String welcomeMessage;
 
-  @RequestMapping("/a")
-  public String welcomeMessage() {
-    return welcomeMessage;
+  //@RequestMapping("/")
+  @RequestMapping(value="/user/hello", method = RequestMethod.GET)
+  public @ResponseBody
+  String welcomeMessage(@RequestParam("name") String name) {
+    return String.format(welcomeMessage, name);
   }
 
 }
