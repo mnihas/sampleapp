@@ -1,0 +1,14 @@
+execution:
+- iterations: 1
+  concurrency: 5
+  scenario: with_script
+
+scenarios:
+  with_script:
+    script: app-test.jmx
+
+modules:
+  jmeter:
+    properties:
+      host: google.pl
+      port: 80
