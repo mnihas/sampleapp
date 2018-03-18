@@ -41,7 +41,7 @@
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
+            <artifactId>selenium-support</artifactId>
             <version>3.11.0</version>
             <scope>test</scope>
         </dependency>
