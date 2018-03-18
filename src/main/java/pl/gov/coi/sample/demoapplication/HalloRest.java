@@ -10,7 +10,7 @@ public class HalloRest {
   @Value("${welcome.message}")
   private String welcomeMessage;
 
-  @RequestMapping("/")
+  @RequestMapping("/a")
   public String welcomeMessage() {
     return welcomeMessage;
   }
